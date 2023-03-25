@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ion-icon {
+    font-size: 32px;
+    color:black;
+}
+
+body {
+    background-color: rgb(180, 228, 202);
+}
+
+.logo img {
+    width:72px;
+    height: 72px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 50%;
+}
+
+.navbar a {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar {
+    display: none;
+}
+
+header {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidenav {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    position: fixed;
+    top:0;
+    right: -100%;
+    z-index: 9999;
+
+    display: grid;
+    place-content: center;
+    gap: 25px;
+    transition: all 500ms;
+}
+
+div:target {
+    right: 0;
+}
+
+.sidenav a {
+    color: white;
+    border: 5px solid  white;
+    border-radius: 10px;
+    padding:10px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    background-color: white;
+}
+
+.banner-wrapper {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./images/banner1.jpg');
+    background-position: center;
+    background-size: cover;
+
+    margin-top: -145px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-content: center;
+}
+
+.banner {
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+  
+    border-radius: 15px;
+    box-shadow: 0 0 10px white;
+    display: grid;
+  
+    gap: 15px;
+  }
+
+.pizza {
+    padding: 10px;
+    background-color:darkseagreen;
+    color: aliceblue;
+    
+    
+}
+
+.section-title {
+    border-bottom: 5px solid seashell;
+    width: fit-content;
+    letter-spacing: 4px;
+
+    font-size: 32px;
+    font-family:fantasy;
+    padding: 10px;
+    margin: auto;
+}
+
+.pizza-card {
+    width:80%;
+    height: 600px;
+    background-color:rgb(230, 176, 100);
+    border: 2px solid white;
+    border-radius: 8px;
+
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    
+}
+
+.pizza-thumbnail {
+    height:50%;
+}
+
+.pizza-thumbnail img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.pizza-info {
+    height:50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+
+    
+    
+    
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.package-detail {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    display: grid;
+
+    gap: 15px;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+
+    transition: all 500ms;
+    font-size: 15px;
+    font-family: Georgia;
+}
+
+.package-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.package-card {
+    height: 275px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+.package-card:hover .package-detail {
+    transform: translateY(-100%);
+}
+
+.package-wrapper {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.form-wrapper {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    background-color:rgb(46, 125, 81);
+}
+
+.form-wrapper .btn{
+    background-color:bisque;
+    color: red ;
+    border: 0 solid white;
+    border-radius: 10px;
+
+}
+
+.container a {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container h4 {
+    color: orange;
+    font-size: 20px;
+}
+
+.container div {
+    padding:10px;
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+}
+
+.container {
+    padding: 15px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(to right, green, white, red); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color:antiquewhite;
+        text-align: center;
+        
+    }
+
+
+
+    .pizza-card{
+        flex-direction: row;
+        height:300px;
+        margin: 0 auto;
+    }
+
+    .pizza-thumbnail {
+        height: 100%;
+        width: 60%;
+    }
+
+    .pizza-info {
+        height: 100%;
+        width: 60%;
+    }
+
+    .btn {
+        color: green;
+    }
+
+    .package-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+
+
+}
